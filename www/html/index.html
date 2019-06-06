@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<title>APIを指定しないPHPとvue.js</title>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<head>
+    <meta http-equiv="content-type" charset="utf-8">
+    <title>APIを指定しないPHPとvue.js</title>
+    <script src="../asset/js/vue.js"></script>
+    <script src="../asset/js/axios.js"></script>
+</head>
+<body>
 <section id="app">
     <form method="post">
         <input type="text" v-model="text" name="test">
         <input type="button" @click="submit" value="送信">
     </form>
 </section>
+</body>
 <script>
     const app = new Vue({
         el: "#app",
